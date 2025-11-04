@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: wheat;
+  border-bottom: 2px solid black;
+  padding: 1rem 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.article-item {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+
+main{
+  width: 80%;
+  margin-inline: auto;
+}
+
+.hero {
+  display:inline-block;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+}
+
+img{
+display: block;        /*Gör bilden till ett block-element som bryter rad */
+max-width: 100%;   /* Ser till att bilden aldrig kan bli större än sin förälder */
+
+object-fit: cover;   /*Ser till att bilder aldrig blir mosade eller förlorar proportioner */
+
+font-style: italic;  /* Frivilligt gör att om bilden saknas är alt-texten kursiv*/
+color: gray;
+}
+.grid-cap{
+  margin-top: 0;
+
+
+}
+.flex-layout{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+
+}
+h1{
+  font-size: 2rem;
+  font: bold;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+}
+
+h2{
+  font-size: 1.5rem;
+  font: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+.default-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.grid-span2{
+  grid-column: span 2;
+}
+.primary-navigation{
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    gap: 2rem;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+.nav-link:hover {
+  color: darkgreen;
+}
+
+.flex-layout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.main-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+    
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

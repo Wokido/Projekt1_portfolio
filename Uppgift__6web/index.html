@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flex & Grid</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="flex-layout">
+                <img class="logo" src="img/froggy.webp" alt="logo">
+                <p class="main-title">Flexbox
+            </div>
+            <ul class="primary-navigation">
+                <li><a class="nav-link" href="#">Hem</a></li>
+                <li><a class="nav-link" href="#flex-heading">Flex</a></li>
+                <li><a class="nav-link" href="#grid-heading">Grid</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section class="article-grid">
+
+        <article class="grid-span2">
+            <h1>Ska jag använda Flexbox eller CSS Grid?</h1>
+            <p>
+                Flexbox och CSS Grid är två moderna metoder för att bygga layouter med CSS. De kompletterar varandra, 
+                men passar bra för olika typer av problem.
+            </p>
+            <a href="https://whitespace.se/blogg/ska-jag-anvanda-flexbox-eller-css-grid/">Läs mer här</a>
+        </article>
+
+        <article class="article-item">
+            <h2 id="flex-heading" class="grid-cap">För- &amp; nackdelar med Flexbox</h2>
+            <p>
+                Flexbox används för endimensionella layouts: antingen rader eller kolumner.
+                Perfekt för navigationsmenyer, kort, knappar och innehållsblock.
+                Mindre optimal för tvådimensionella layouter.
+            </p>
+        </article>
+
+        <article class="article-item">
+            <img class="default-image" src="img/flexbox-1.jpg" alt="Flexbox illustration">
+        </article>
+
+        <article class="article-item">
+            <h2 id="grid-heading" class="grid-cap">För- &amp; nackdelar med CSS Grid</h2>
+            <p>
+                CSS Grid passar för tvådimensionella layouter med både rader och kolumner.
+                Utmärkt för sidstrukturer, dashboard-liknande design och större sektioner.
+                Kan vara mer komplext, men ger mycket kontroll.
+            </p>
+        </article>
+
+        <article class="article-item">
+            <img class="default-image" src="img/cssgrid-1.jpg" alt="CSS Grid illustration">
+        </article>
+
+        <article class="article-item">
+            <h2 class="grid-cap">Slutsats</h2>
+            <p>
+                Bästa resultat får du genom att kombinera båda! Använd Grid till sidlayout och Flexbox till innehållet inuti sektionerna.
+            </p>
+        </article>
+
+        <article class="article-item">
+            <img class="default-image" src="img/webb.jpg" alt="Webbdesign">
+        </article>
+
+    </section>
+</main>
+
+<footer>
+    <p>Flexbox & CSS Grid</p>
+</footer>
+
+</body>
+</html>
