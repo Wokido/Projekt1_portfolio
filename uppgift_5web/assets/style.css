@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: wheat;
+  border-bottom: 2px solid black;
+  padding: 1rem 2rem;
+}
+
+.flex-layout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.main-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.primary-navigation {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: darkgreen;
+}
+
+main {
+  width: 80%;
+  margin-inline: auto;
+  padding: 2rem 0;
+}
+
+.flex-article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.flex-item {
+  flex: 1 1 45%;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.flex-item.full-width {
+  flex: 1 1 100%;
+}
+
+.text h2 {
+  margin-top: 0;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.default-image {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

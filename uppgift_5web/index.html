@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex istället för Grid</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="flex-layout">
+                <img class="logo" src="img/froggy.webp" alt="logo">
+                <p class="main-title">Flexbox</p>
+            </div>
+            <ul class="primary-navigation">
+                <li><a class="nav-link" href="#">Hem</a></li>
+                <li><a class="nav-link" href="#flex-heading">Flex</a></li>
+                <li><a class="nav-link" href="#grid-heading">Grid</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="flex-article">
+            <div class="flex-item full-width">
+                <h1>Ska jag använda Flexbox eller CSS Grid?</h1>
+                <p>Flexbox och CSS Grid är två metoder för att bygga upp en layout med CSS. De jämförs ofta med varandra,
+                trots att det är ganska stor skillnad mellan Flexbox och CSS Grid. I det här inlägget delar jag med mig
+                av fördelar och nackdelar med de båda metoderna.</p> 
+                <a href="https://whitespace.se/blogg/ska-jag-anvanda-flexbox-eller-css-grid/">Läs mer här</a>.
+            </div>
+
+            <div class="flex-item text">
+                <h2>För- &amp; nackdelar med Flexbox</h2> 
+                <p>Flexbox är bra för att strukturera innehållet ... Bra om man behöver lite mer &quot;självständiga flexbarn&quot; som kan ha olika storlekar.</p>
+            </div>
+
+            <div class="flex-item image">
+                <img class="default-image" src="img/flexbox-1.jpg" alt="img">
+            </div>
+
+            <div class="flex-item text">
+                <h2>För- &amp; nackdelar med CSS Grid</h2>
+                <p>Bra för att strukturera layouten ... Mindre bra för endimensionella element.</p>
+            </div>
+
+            <div class="flex-item image">
+                <img class="default-image" src="img/cssgrid-1.jpg" alt="img">
+            </div>
+
+            <div class="flex-item text full-width">
+                <h2>Slutsats</h2> 
+                <p>Sammanfattningsvis kan man säga att båda bör användas i din layout...</p>
+                <p>Grid är också bra om man vill ha kontroll över elementets barn...</p>
+            </div>
+
+            <div class="flex-item image">
+                <img class="default-image" src="img/webb.jpg" alt="img">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Webbplats</p>
+    </footer>
+</body>
+</html>

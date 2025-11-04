@@ -1,0 +1,103 @@
+
+/*link styling*/
+
+body {
+    background:lightgrey;
+
+
+}
+section{ 
+    background-color: whitesmoke;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 0,5rem;
+
+
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 0.5rem ;
+ 
+
+
+}
+header{
+    background-color: lightblue;
+    padding: 0.1rem;
+    text-align: center;
+
+}
+
+h1{
+    margin-left: 0.5rem;
+
+
+}
+
+.lol{
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+}
+
+a:link{
+    color: rebeccapurple; 
+    font-weight:bold;
+    font-size: 1,125rem;    
+    white-space: nowrap;
+    background-color: white;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 0,5rem;
+    text-decoration: none;
+    text-align: center;
+
+
+}
+
+a:visited{color: blue;
+}
+
+a:hover{color: darksalmon;
+        background-color: skyblue;
+
+}
+
+a:active{color: magenta;}
+
+.navlink:link{
+    color: blue;
+    font-weight:bold;
+    font-size: 1,125rem;
+    text-decoration: none;
+}
+
+.navlink:hover{color: lightskyblue;
+    text-decoration: underline;
+}
+
+.navlink:active {color: darkblue;}
+
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+}
+
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: blue;
+}
+
+.topnav a:active {
+  background-color: #04AA6D;
+  color: white;
+}
