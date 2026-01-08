@@ -8,75 +8,203 @@
   <script defer src="menu.js"></script>
 </head>
 <body>
-  <nav>
-    <div class="flex-layout">
-      <img src="images/logo.svg" alt="Logotyp" class="logo">
-      <span class="logo-brand">Min Portfolio</span>
-    </div>
+    <nav> 
+        <div class="flex-layout">
+            <!--en SVG logo så jag kan ändra färg ... se i style.css under selector svg g path. -->
 
-    <button class="hamburger-button" aria-label="Meny">
-      <svg class="icon-hamburger" viewBox="0 0 100 80" width="30" height="30">
-        <rect class="line top" width="100" height="10"></rect>
-        <rect class="line middle" y="30" width="100" height="10"></rect>
-        <rect class="line bottom" y="60" width="100" height="10"></rect>
-      </svg>
-    </button>
-
-    <ul class="primary-navigation" id="primary-navigation">
-      <li><a href="index.html" class="nav-link">Start</a></li>
-      <li class="dropdown">
-        <a href="#" class="nav-link">Portfolio</a>
-        <ul>
-          <li><a href="Uppgifter/Uppgift_1/index.html">Uppgift 1 – Hello World</a></li>
-          <li><a href="Uppgifter/Uppgift_2/index.html">Uppgift 2 – Semantiska taggar</a></li>
-          <li><a href="Uppgifter/Uppgift_3/uppgift3/index.html">Uppgift 3 – Flex & Grid</a></li>
-          <li><a href="Uppgifter/Uppgift_4/index.html">Uppgift 4 – Bilder</a></li>
-          <li><a href="Uppgifter/uppgift_5web/index.html">Uppgift 5 – Flexbox</a></li>
-          <li><a href="Uppgifter/Uppgift__6web/index.html">Uppgift 6 – Grid CSS</a></li>
+            <span class="logo-brand">Lukas-portfolio</span>
+        </div>
+        <ul class="primary-navigation" id="primary-navigation">
+            <li><a class="nav-link" href="#Home">Hem</a></li>
+            <!-- dropdown-meny skapas med dropdown-klass -->
+            <li class="dropdown">
+                <a class="nav-link" href="#port">Portfolio</a>
+                <ul>
+                    <li><a class="nav-link" href="#port">Visa Allt</a></li>
+                    <!--undermeny-->
+                    <li class="dropdown">
+                        <a class="nav-link" href="#">Uppgifter</a>
+                        <ul>
+                            <li><a class="nav-link" href="/Uppgifter/Uppgift_1/index.html">Uppgift 1: Hello World</a></li>
+                            <li><a class="nav-link" href="/Uppgifter/Uppgift_2/index.html">Uppgift 2: Semantiska taggar</a></li>
+                            <li><a class="nav-link" href="/Uppgifter/Uppgift_3/uppgift3/index.html">Uppgift 3: Flex &amp; Grid</a></li>
+                            <li><a class="nav-link" href="/Uppgifter/Uppgift_4/index.html">Uppgift 4: Bilder</a></li>
+                            <li><a class="nav-link" href="/Uppgifter/Uppgift_2/index.html">Uppgift 5: Flexbot layout</a></li>
+                            <li><a class="nav-link" href="/Uppgifter/Uppgift_3/uppgift3/index.html">Uppgift 6: Grid layout</a></li>
+                        </ul>
+                    </li> 
+                    <!-- <li class="dropdown">
+                        <a class="nav-link" href="#">Projekter</a>
+                        <ul>
+                            <li><a class="nav-link" href="#">Projekt 2: ???</a></li>
+                            <li><a class="nav-link" href="#">Projekt 3: ???</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="nav-link" href="help.html">Hjälp</a>   
+                    <ul>
+                        <li><a class="nav-link" href="#">HJÄLP MIG JAG DÖR</a></li>
+                        <li><a class="nav-link" href="#">Hjälp med dropDown</a></li>
+                    </ul>           
+            </li>
         </ul>
-      </li>
-      <li><a href="help.html" class="nav-link">Hjälp</a></li>
-      <li><a href="about.html" class="nav-link">Om</a></li>
-    </ul>
-  </nav>
+        <button class="hamburger-button" id="hamburger-button" aria-label="hamburger-button" aria-expanded="false">
+            <svg fill="var(--clr-secondary)" class="icon-hamburger" viewbox="0 0 100 100" width="32">
+                <rect class="line top" width="90" height="3" x="5" y="30" rx="2"></rect>
+                <rect class="line middle" width="90" height="3" x="5" y="50" rx="2"></rect>
+                <rect class="line bottom" width="50" height="3" x="45" y="70" rx="2"></rect>    
+            </svg>
+        </nav>
 
 <main>
-  <section class="portfolio-section">
-    <h2>Alla Projekt</h2>
-
-    <div class="portfolio-list">
-
-      <div class="project-row">
-        <img src="images/uppgift1.jpg" alt="Uppgift 1">
-        <div class="project-info">
-          <h3>Uppgift 1 – Hello World</h3>
-          <p>En enkel HTML-sida som visar grundläggande struktur och första styling.</p>
-          <a href="Uppgifter/Uppgift_1/index.html" class="btn">Visa projekt</a>
-        </div>
-      </div>
-
-      <div class="project-row">
-        <img src="images/uppgift2.jpg" alt="Uppgift 2">
-        <div class="project-info">
-          <h3>Uppgift 2 – Semantiska taggar</h3>
-          <p>Lär dig använda rätt HTML5-taggar för struktur och tillgänglighet.</p>
-          <a href="Uppgifter/Uppgift_2/index.html" class="btn">Visa projekt</a>
-        </div>
-      </div>
-
-      <div class="project-row">
-        <img src="images/uppgift3.jpg" alt="Uppgift 3">
-        <div class="project-info">
-          <h3>Uppgift 3 – Flex & Grid</h3>
-          <p>Responsiv layout med Flexbox och CSS Grid, optimerad för olika skärmar.</p>
-          <a href="Uppgifter/Uppgift_3/uppgift3/index.html" class="btn">Visa projekt</a>
-        </div>
-      </div>
-
-      <!-- Lägg till fler projekt på samma sätt -->
-
+  <section class="hero-grid">
+    <div id="Home" class="Backround_image"></div>
+    <div class="hero-text">
+      <span>Lukas Garpö</span>
+      <p>
+        Jag är en engagerad och kreativ webbdesigner och programmerare med stor passion för att utvecklas och lära mig mer inom webbutveckling. 
+        Jag strävar alltid efter att förbättra mina färdigheter och skapa moderna, funktionella och visuellt tilltalande lösningar. 
+        Varje projekt är en möjlighet att växa och utforska nya tekniker – och jag är alltid redo för nästa utmaning.
+      </p>
+     <a id="port" href="help.html" class="contact-button">Kontakta mig</a>  
+    </div>
+    <div class="hero-image">
+      <div class="circle-logo">L</div>
     </div>
   </section>
+  <section class="portfolio-section">
+  <h1>Portfolio</h1>
+  <p class="pdiddy">
+    Här kan du hitta alla projekt jag har arbetat på under min resa som webbdesigner och programmerare. 
+    Portfolio-sektionen visar både skoluppgifter och personliga projekt där jag har fått möjlighet att utforska olika tekniker, 
+    som HTML, CSS, JavaScript, Flexbox och Grid, samt designprinciper för att skapa användarvänliga och estetiskt tilltalande webbsidor. 
+    Varje projekt speglar mitt fokus på kvalitet, kreativitet och ständig förbättring. 
+    Ta gärna en titt på dem för att se min utveckling, mina färdigheter och mitt engagemang i webbutveckling.
+  </p>
+  <!-- <h2>Alla Projekter</h2>
+
+
+    <a class="portfolio-box" href="#">
+      <div class="portfolio-text">
+        <span class="heading"><h3>Projekt_2</h3></span>
+        <p>kommer Snart...</p>
+      </div>
+      <div class="portfolio-image">
+        <img src="#" alt="Projekt_2">
+      </div>
+
+    </a>
+
+
+    <a class="portfolio-box" href="#">
+      <div class="portfolio-text">
+        <span class="heading"><h3>Projekt_3</h3></span>
+        <p>kommer Snart...</p>
+      </div>
+      <div class="portfolio-image">
+        <img src="#" alt="Projekt_3">
+      </div>
+
+    </a> -->
+    
+    <h2>Alla Uppgifter</h2>
+
+
+      <a class="portfolio-box" href="Uppgifter/Uppgift_1/index.html">
+        <div class="portfolio-text">
+          <span class="heading"><h3>Uppgift_1</h3></span>
+          <p>Detta projekt visar grunderna i HTML och CSS. Vi skapar en enkel webbsida med rubrik, stycken och bilder, och lär oss hur man strukturerar en sida korrekt. Fokus ligger på semantisk kod och grundläggande styling.</p>
+        </div>
+        <div class="portfolio-image">
+          <img src="img/Skärmbild 2025-11-13 114314.png" alt="Uppgift_1">
+        </div>
+
+      </a>
+
+
+      <a class="portfolio-box" href="Uppgifter/Uppgift_2/index.html">
+        <div class="portfolio-text">
+          <span class="heading"><h3>Uppgift_2</h3></span>
+          <p>Projektet handlar om att använda HTML5:s semantiska taggar korrekt, såsom header, main, section och footer. Vi lär oss vikten av tillgänglighet och hur man gör sidan lättläst både för människor och sökmotorer.</p>
+        </div>
+        <div class="portfolio-image">
+        <img src="img/Skärmbild 2025-11-13 114451.png" alt="Uppgift_2">
+        </div>
+
+      </a>
+
+
+      <a class="portfolio-box" href="Uppgifter/Uppgift_3/uppgift3/index.html">
+        <div class="portfolio-text">
+          <span class="heading"><h3>Uppgift_3</h3></span>
+          <p>Här skapar vi en responsiv layout med CSS Flexbox och Grid. Vi experimenterar med rader, kolumner, justeringar och gap för att se hur elementen beter sig på olika skärmstorlekar. Projektet visar praktiska användningar av layout-tekniker.</p>
+        </div>
+        <div class="portfolio-image">
+        <img src="img/Skärmbild 2025-11-13 114514.png" alt="Uppgift_3">
+        </div>
+
+      </a>
+
+
+      <a class="portfolio-box" href="Uppgifter/Uppgift_4/index.html">
+        <div class="portfolio-text">
+          <span class="heading"><h3>Uppgift_4</h3></span>
+          <p>Fokus på bildhantering i HTML och CSS, inklusive responsiva bilder, bildformat och placering. Vi lär oss hur man använder bilder för att förbättra utseendet på sidan utan att påverka laddningstider negativt.</p>
+        </div>
+        <div class="portfolio-image">
+        <img src="img/Skärmbild 2025-11-13 114538.png" alt="Uppgift_4">
+        </div>
+
+      </a>
+    </button>   
+    
+
+      <a class="portfolio-box" href="Uppgifter/uppgift_5web/index.html">
+        <div class="portfolio-text">
+          <span class="heading"><h3>Uppgift_5</h3></span>
+          <p>En mer avancerad Flexbox-layout med flera kolumner och anpassning till olika skärmstorlekar. Projektet visar hur man kan strukturera innehåll effektivt och skapa en snygg och responsiv design.</p>
+        </div>
+        <div class="portfolio-image">
+        <img src="img/Skärmbild 2025-11-18 114839.png" alt="Uppgift_5">
+        </div>
+
+      </a>
+    </button>   
+
+
+      <a class="portfolio-box" href="Uppgifter/Uppgift__6web/index.html">
+        <div class="portfolio-text">
+          <span class="heading"><h3>Uppgift_6</h3></span>
+          <p>Vi använder CSS Grid för att skapa komplexa layouter med rader och kolumner. Projektet demonstrerar responsiv design och hur man kan kombinera Grid och Flexbox för bästa resultat på olika enheter.</p>
+        </div>
+        <div class="portfolio-image">
+        <img src="img/Skärmbild 2025-11-18 115147.png" alt="Uppgift_6">
+        </div>
+
+      </a>
+    </button>   
+
+
+  </section>
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h4>Lukas Garpö</h4>
+      <p>Webbdesigner &amp; Programmerare</p>
+    </div>
+    <div class="footer-center">
+      <h4>Kontakt</h4>
+      <p>Email: <a href="mailto:lukasgarpo@gmail.com">lukasgarpo@gmail.com</a></p>
+      <p>Telefon: +46-079-332-09-21</p>
+      <a href="https://github.com/Wokido" aria-label="GitHub">GitHub</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>2025 Lukas Garpö.</p>
+  </div>
+</footer>
 </main>
 </body>
 </html>
