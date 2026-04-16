@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tillgänglighet</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+<a class="skip_link" href="#main_content">Hoppa till innehåll</a>
+
+<nav> 
+    <div class="flex-layout">
+        <span class="logo-brand">Htmls Historia</span>
+    </div>
+
+    <ul class="primary-navigation" id="primary-navigation">
+        <li><a class="nav-link" href="/index.html">Hem</a></li>
+
+        <li class="dropdown">
+            <a class="nav-link" href="#">HTML</a>
+            <ul>
+                <li><a class="nav-link" href="Projekt_2.html">Projekt_2 hem</a></li>
+                <li><a class="nav-link" href="Grunderna.html#top">Grunderna</a></li>
+                <li><a class="nav-link" href="Historia.html#internet">Historia</a></li>
+                <li><a class="nav-link" href="tillgänglighet.html#start">Tillgänglighet</a></li>
+            </ul>
+        </li> 
+
+        <li><a class="nav-link" href="/help.html">Kontakt</a></li>
+    </ul>
+
+    <button class="hamburger-button" id="hamburger-button" aria-label="Meny" aria-expanded="false">
+        <svg fill="var(--clr-secondary)" class="icon-hamburger" viewBox="0 0 100 100" width="32">
+            <rect class="line top" width="90" height="3" x="5" y="30" rx="2"></rect>
+            <rect class="line middle" width="90" height="3" x="5" y="50" rx="2"></rect>
+            <rect class="line bottom" width="50" height="3" x="45" y="70" rx="2"></rect>    
+        </svg>
+    </button>
+</nav>
+
+<main id="main_content">
+
+<section class="hero-grid" id="start">
+    <div class="hero-text">
+        <h1 class="h1-titel">Tillgänglighet på webben</h1>
+        <p>
+            Tillgänglighet handlar om att alla människor, oavsett förmåga, ska kunna använda en webbplats.
+        </p>
+     <a id="html" href="/help.html" class="contact-button">Kontakta mig</a> 
+    </div>
+
+    <div class="hero-image">
+        <img src="/img/dom.webp " alt="Person som arbetar vid dator">
+    </div>
+</section>
+
+<section class="content">
+
+    <aside class="sidebar">
+
+        <h3>Innehåll</h3>
+        <ul>
+            <ol>
+                <li><a href="#skip">Skip-link</a></li>
+                <li><a href="#keyboard">Tangentbord</a></li>
+                <li><a href="#alt">Alt-attribut</a></li>
+                <li><a href="#navigation">Navigering</a></li>
+                <li><a href="#contrast">Färgkontrast</a></li>
+                <li><a href="#click">Klickbara områden</a></li>
+            </ol>
+        </ul>
+    </aside>
+
+    <div class="grund-content">
+
+        <h2>Tillgänglighet</h2>
+
+        <section class="element-egenskaper">
+
+            <div class="element" id="skip">
+                <p>Skip-link</p>
+                <p>
+                    Skip-links ger användare möjlighet att hoppa över navigeringslänkar och direkt gå till huvudinnehållet.
+                    Detta är särskilt användbart för personer som använder skärmläsare eller tangentbord.
+                </p>
+            </div>
+
+            <div class="element" id="keyboard">
+                <p>Tangentbordsnavigering</p>
+                <p>
+                    Säkerställ att hela webbplatsen är navigerbar med tangentbordet utan att en mus behövs.
+                    Detta hjälper användare med motoriska begränsningar eller synproblem.
+                </p>
+            </div>
+
+            <div class="element" id="alt">
+                <p>Alt-attribut</p>
+                <p>
+                    Alt-attribut beskriver bilder för skärmläsare. Detta gör att personer med synnedsättning
+                    kan förstå innehållet. Dekorativa bilder kan ha alt="".
+                </p>
+            </div>
+
+            <div class="element" id="navigation">
+                <p>Tydlig navigering</p>
+                <p>
+                    En tydlig och logisk navigationsstruktur gör det lättare för alla användare att hitta rätt.
+                    Använd konsekventa menyer och tydliga länkar.
+                </p>
+            </div>
+
+            <div class="element" id="contrast">
+                <p>Färgkontrast</p>
+                <p>
+                    Se till att text och bakgrund har tillräcklig kontrast för att vara lättläst.
+                    Detta är viktigt för personer med synnedsättningar eller färgblindhet.
+                </p>
+            </div>
+
+            <div class="element" id="click">
+                <p>Klickbara områden</p>
+                <p>
+                    Gör knappar och länkar tillräckligt stora och lätta att klicka på,
+                    särskilt på mobila enheter och för personer med motoriska svårigheter.
+                </p>
+            </div>
+
+        </section>
+
+    </div>
+
+</section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startsida</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+<a class="skip_link" href="#main_content">Hoppa till innehåll</a>
+
+<nav> 
+    <div class="flex-layout">
+        <span class="logo-brand">Htmls Historia</span>
+    </div>
+
+    <ul class="primary-navigation" id="primary-navigation">
+        <li><a class="nav-link" href="/index.html">Hem</a></li>
+
+        <li class="dropdown">
+            <a class="nav-link" href="#">HTML</a>
+            <ul>
+                <li><a class="nav-link" href="Projekt_2.html">Projekt_2 hem</a></li>
+                <li><a class="nav-link" href="Grunderna.html#top">Grunderna</a></li>
+                <li><a class="nav-link" href="Historia.html#internet">Historia</a></li>
+                <li><a class="nav-link" href="tillgänglighet.html#start">Tillgänglighet</a></li>
+            </ul>
+        </li> 
+
+        <li><a class="nav-link" href="Kontakt.html">Kontakt</a></li>
+    </ul>
+
+    <button class="hamburger-button" id="hamburger-button" aria-label="Meny" aria-expanded="false">
+        <svg fill="var(--clr-secondary)" class="icon-hamburger" viewBox="0 0 100 100" width="32">
+            <rect class="line top" width="90" height="3" x="5" y="30" rx="2"></rect>
+            <rect class="line middle" width="90" height="3" x="5" y="50" rx="2"></rect>
+            <rect class="line bottom" width="50" height="3" x="45" y="70" rx="2"></rect>    
+        </svg>
+    </button>
+</nav>
+
+<main id="main_content">
+
+<section class="hero-grid">
+    <div class="hero-text">
+        <h1 class="h1-titel">Lär dig grunderna i webbutveckling</h1>
+        <p class="testp1">
+            Jag är en engagerad och kreativ webbdesigner och programmerare med stor passion för att utvecklas och lära mig mer inom webbutveckling.
+        </p>
+
+        <!-- SCROLL NER PÅ SAMMA SIDA -->
+        <a href="#more" class="contact-button">Läs mer ↓</a>
+
+        <!-- GÅ TILL ANNAN SIDA + SCROLL -->
+        <a href="Grunderna.html#top" class="contact-button">Till Grunderna →</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="/img/hero2.webp" alt="Arbete på dator.">
+    </div>
+</section>
+
+    <!-- SEKTION ATT SCROLLA TILL -->
+    <section class="hero-grid-2" id="more" style="padding: 4rem; color: white;">
+        <div class="hero-text">
+        <h1>Mer om mig</h1>
+
+            <p class="testp1">
+                Här kan du läsa mer om webbutveckling, HTML, CSS och JavaScript.
+                Använd menyn för att navigera mellan olika delar av sidan.
+            </p>
+
+            <!-- LÄNKAR VIDARE -->
+            <a href="Historia.html#internet" class="contact-button">HTML Historia</a>
+
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
+

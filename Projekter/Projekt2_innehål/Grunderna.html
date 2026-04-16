@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <a class="skip_link" href="#main_content">skip to main_content</a>
+    <nav> 
+        <div class="flex-layout">
+            <!--en SVG logo så jag kan ändra färg ... se i style.css under selector svg g path. -->
+
+            <span class="logo-brand">Htmls Historia</span>
+        </div>
+        <ul class="primary-navigation" id="primary-navigation">
+            <li><a class="nav-link" href="/index.html">Hem</a></li>
+            <!-- dropdown-meny skapas med dropdown-klass -->
+            <li class="dropdown">
+                <a class="nav-link" href="#">HTML</a>
+                <ul>
+                    <li><a class="nav-link" href="Projekt_2.html">Projekt_2 hem</a></li>
+                    <li><a class="nav-link" href="Grunderna.html">Grunderna</a></li>
+                    <li><a class="nav-link" href="Historia.html">Historia</a></li>
+                    <li><a class="nav-link" href="tillgänglighet.html">Tillgänglighet</a></li>
+                    <li><a class="nav-link" href="hur_fungerar.html">Hur fungerar det?</a></li> 
+                </ul>
+            </li> 
+            <li><a class="nav-link" href="Kontakt.html">Kontakt</a></li>
+
+        </ul>
+        <button class="hamburger-button" id="hamburger-button" aria-label="hamburger-button" aria-expanded="false">
+            <svg fill="var(--clr-secondary)" class="icon-hamburger" viewbox="0 0 100 100" width="32">
+                <rect class="line top" width="90" height="3" x="5" y="30" rx="2"></rect>
+                <rect class="line middle" width="90" height="3" x="5" y="50" rx="2"></rect>
+                <rect class="line bottom" width="50" height="3" x="45" y="70" rx="2"></rect>    
+            </svg>
+        </nav>
+    <main>
+
+    <section class="hero-grid">
+    <div class="hero-text">
+      <h1 class="h1-titel">Grunderna</h1>
+      <p>
+            Här kan du läsa om de vanligaste HTML-elementen och CSS egenskaperna. 
+            Använd innehållsmenyn nedan till höger för att nå en specifik funktion.
+      </p>
+     <a id="html" href="/help.html" class="contact-button">Kontakta mig</a>  
+    </div>
+
+	<div class="hero-image img">
+		<img src="/img/webbutveckling.webp" alt="Arbete på dator.">
+	</div>
+  </section>
+
+<!-- CONTENT -->
+<section class="content">
+
+<!-- SIDEMENU (BOOKMARKS) -->
+<aside class="sidebar">
+
+	<h3>Innehåll</h3>
+
+	<ul>
+		<li><a href="#html">I. HTML</a>
+			<ol>
+				
+				<li><a href="#meta">Meta</a></li>
+				<li><a href="#semantic">Semantiska element</a></li>
+				<li><a href="#text">Text & Rubriker</a></li>
+				<li><a href="#layout">Layout</a></li>
+			</ol>
+		</li>
+
+		<li><a href="#css">II. CSS</a>
+			<ol>
+				<li><a href="#typografi">Typsnitt & stilar</a></li>
+				<li><a href="#farger">Färger</a></li>
+				<li><a href="#layoutcss">Layout</a></li>
+				<li><a href="#storlek">Storlek & marginal</a></li>
+				<li><a href="#effekter">Effekter</a></li>
+			</ol>
+		</li>
+	</ul>
+</aside>
+
+
+<!-- INFO -->
+<div class="info">
+
+<section class="grund-content">
+
+	<h2 id="meta">HTML-element</h2>
+
+	<h3 >Meta</h3>
+	<section class="element-egenskaper">
+
+		<div class="element">
+			<p>&lt;!DOCTYPE&gt;</p>
+			<p>Denna deklaration specificerar vilken version av HTML som används i dokumentet.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;html&gt;</p>
+			<p>Rotelementet i ett HTML-dokument som innehåller alla andra element.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;head&gt;</p>
+			<p>En behållare för metadata om dokumentet, såsom titeln, länkar till stilmallar och metataggar.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;title&gt;</p>
+			<p>Definierar titeln på HTML-dokumentet, som visas i webbläsarens titelrad eller flik.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;style&gt;</p>
+			<p>Används för att bädda in CSS (Cascading Style Sheets) i ett HTML-dokument.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;link&gt;</p>
+			<p>Specificerar externa resurser, som CSS-filer, att användas i dokumentet.</p>
+		</div>
+
+		<div id="semantic" class="element">
+			<p>&lt;body&gt;</p>
+			<p>Huvudinnehållsområdet i HTML-dokumentet där text, bilder och annat innehåll visas.</p>
+		</div>
+
+	</section>
+
+
+	<h3>Semantiska element</h3>
+	<section class="element-egenskaper">
+
+		<div class="element">
+			<p>&lt;main&gt;</p>
+			<p>Representerar huvudinnehållet i dokumentet.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;header&gt;</p>
+			<p>Innehåller vanligtvis introducerande innehåll eller navigation.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;section&gt;</p>
+			<p>Delar upp innehållet i avsnitt.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;footer&gt;</p>
+			<p>Innehåller ofta information om företaget eller upphovsrätt.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;article&gt;</p>
+			<p>Representerar en fristående del av innehåll.</p>
+		</div>
+
+		<div id="text" class="element">
+			<p>&lt;aside&gt;</p>
+			<p>Innehåller innehåll som är relaterat till huvudinnehållet.</p>
+		</div>
+
+	</section>
+
+
+	<h3>Text & Rubriker</h3>
+	<section class="element-egenskaper">
+
+		<div class="element">
+			<p>&lt;a&gt;</p>
+			<p>Skapar hyperlänkar till andra webbsidor.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;span&gt;</p>
+			<p>En generisk behållare för text.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;p&gt;</p>
+			<p>Representerar ett stycke text.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;h1&gt; ... &lt;h6&gt;</p>
+			<p>Definierar olika nivåer av rubriker.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;ol&gt;</p>
+			<p>Skapar en ordnad lista.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;ul&gt;</p>
+			<p>Skapar en oordnad lista.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;li&gt;</p>
+			<p>Definierar ett listobjekt.</p>
+		</div>
+
+		<div class="element">
+			<p>&lt;strong&gt;</p>
+			<p>Renderar text i fet stil.</p>
+		</div>
+
+		<div id="layout" class="element">
+			<p>&lt;em&gt;</p>
+			<p>Betonar text genom kursiv stil.</p>
+		</div>
+
+	</section>
+
+
+	<h3>Layout</h3>
+	<section class="element-egenskaper">
+
+		<div class="element">
+			<p>&lt;div&gt;</p>
+			<p id="css">En allmän behållare för layout och styling.</p>
+		</div>
+
+	</section>
+
+
+	<h2 id="#typografi">CSS-egenskaper</h2>
+
+	<h3>Typsnitt & stilar</h3>
+	<section class="element-egenskaper">
+
+		<div class="element">
+			<p>font-family</p>
+			<p>Specificerar typsnitt.</p>
+		</div>
+
+		<div class="element">
+			<p>font-weight</p>
+			<p>Bestämmer tjockleken på text.</p>
+		</div>
+
+		<div class="element">
+			<p>font-style</p>
+			<p>Sätter stil t.ex. italic.</p>
+		</div>
+
+		<div class="element">
+			<p>font-size</p>
+			<p>Anger storleken på text.</p>
+		</div>
+
+		<div class="element">
+			<p>text-decoration</p>
+			<p>Kontrollerar textdekoration.</p>
+		</div>
+
+		<div class="element">
+			<p>text-transform</p>
+			<p id="farger">Ändrar text till versaler eller gemener.</p>
+		</div>
+
+	</section>
+
+
+	<h3>Färger</h3>
+	<section class="element-egenskaper">
+
+		<div class="element">
+			<p>color</p>
+			<p>Textfärg.</p>
+		</div>
+
+		<div class="element">
+			<p>background-color</p>
+			<p>Bakgrundsfärg.</p>
+		</div>
+
+		<div class="element">
+			<p>background-image</p>
+			<p>Sätter bakgrundsbild eller gradient.</p>
+		</div>
+
+		<div class="element">
+			<p>background</p>
+			<p id="layoutcss">Kombinerad bakgrundsegenskap.</p>
+		</div>
+
+	</section>
+
+
+	<h3>Layout</h3>
+	<section class="element-egenskaper">
+
+		<div class="element">
+			<p>position</p>
+			<p>Definierar position.</p>
+		</div>
+
+		<div class="element">
+			<p>display</p>
+			<p>Bestämmer hur element visas.</p>
+		</div>
+
+		<div class="element">
+			<p>justify-content</p>
+			<p>Justering i flexbox.</p>
+		</div>
+
+		<div class="element">
+			<p>align-items</p>
+			<p>Justering på tväraxeln.</p>
+		</div>
+
+		<div class="element">
+			<p>gap</p>
+			<p id="storlek">Avstånd mellan element.</p>
+		</div>
+
+	</section>
+
+
+	<h3>Storlek & marginal</h3>
+	<section class="element-egenskaper">
+
+		<div class="element">
+			<p>width</p>
+			<p>Bredd på element.</p>
+		</div>
+
+		<div class="element">
+			<p>height</p>
+			<p>Höjd på element.</p>
+		</div>
+
+		<div class="element">
+			<p>margin</p>
+			<p>Yttre avstånd.</p>
+		</div>
+
+		<div class="element">
+			<p>padding</p>
+			<p id="effekter">Inre avstånd.</p>
+		</div>
+
+	</section>
+
+
+	<h3>Effekter</h3>
+	<section class="element-egenskaper">
+
+		<div class="element">
+			<p>object-fit</p>
+			<p>Styr hur bilder passar i sin box.</p>
+		</div>
+
+		<div class="element">
+			<p>aspect-ratio</p>
+			<p>Anger bredd/höjd-förhållande.</p>
+		</div>
+
+		<div class="element">
+			<p>nth-child()</p>
+			<p>Selektor för element baserat på position.</p>
+		</div>
+
+	</section>
+
+</section>
+
+</div>
+
+</section>
+
+</main>
+
+</body>
+</html>

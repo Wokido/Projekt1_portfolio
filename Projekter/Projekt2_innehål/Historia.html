@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML:s Historia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a class="skip_link" href="#main_content">Hoppa till innehåll</a>
+
+<nav> 
+    <div class="flex-layout">
+        <span class="logo-brand">HTML:s Historia</span>
+    </div>
+
+    <ul class="primary-navigation" id="primary-navigation">
+        <li><a class="nav-link" href="/index.html">Hem</a></li>
+
+        <li class="dropdown">
+            <a class="nav-link" href="Projekt_2.html">HTML</a>
+            <ul>
+                <li><a class="nav-link" href="Projekt_2.html">Projekt_2 hem</a></li>
+                <li><a class="nav-link" href="Grunderna.html">Grunderna</a></li>
+                <li><a class="nav-link" href="Historia.html">Historia</a></li>
+                <li><a class="nav-link" href="tillgänglighet.html">Tillgänglighet</a></li>
+            </ul>
+        </li> 
+
+        <li><a class="nav-link" href="#">Kontakt</a></li>
+    </ul>
+
+    <button class="hamburger-button" id="hamburger-button" aria-label="Meny" aria-expanded="false">
+        <svg fill="var(--clr-secondary)" class="icon-hamburger" viewBox="0 0 100 100" width="32">
+            <rect class="line top" width="90" height="3" x="5" y="30" rx="2"></rect>
+            <rect class="line middle" width="90" height="3" x="5" y="50" rx="2"></rect>
+            <rect class="line bottom" width="50" height="3" x="45" y="70" rx="2"></rect>    
+        </svg>
+    </button>
+</nav>
+
+<main id="main_content">
+
+<section class="hero-grid">
+    <div class="hero-text">
+        <h1 class="h1-titel">HTML:s Historia</h1>
+        <p>
+            Internet har sina rötter i militära projekt som ARPANET på 1960-talet. 
+            Syftet var att skapa ett robust nätverk som kunde fungera även om delar av systemet slogs ut.
+        </p>
+     <a id="html" href="/help.html" class="contact-button">Kontakta mig</a> 
+    </div>
+
+    <div class="hero-image img">
+	    <img src="/img/girl_coder.webp" alt="Arbete på dator.">
+	</div>
+</section>
+
+<section class="content">
+
+    <aside class="sidebar">
+        <h3>Innehåll</h3>
+        <ul>
+            <a href="#html">I. HTMLs Historia</a>
+            <ol>
+                <li><a href="#internet">Internet</a></li>
+                <li><a href="#html">HTML:s födelse</a></li>
+                <li><a href="#www">WWW</a></li>
+                <li><a href="#w3c">W3C</a></li>
+                <li><a href="#js">JavaScript</a></li>
+                <li><a href="#early">2000-talet</a></li>
+                <li><a href="#html5">HTML5</a></li>
+                <li><a href="#modern">2010–2019</a></li>
+            </ol>
+        </ul>
+    </aside>
+
+<div class="grund-content">
+
+    <h2>HTML:s Historia</h2>
+
+    <section class="element-egenskaper">
+
+        <div class="element" id="internet">
+            <p>Internet</p>
+            <p>
+                Internet har sina rötter i militära projekt som ARPANET på 1960-talet.
+                Målet var att skapa ett robust nätverk som kunde fungera även om delar slutade fungera.
+                Detta blev grunden till dagens globala internet.
+            </p>
+        </div>
+
+        <div class="element" id="html">
+            <p>HTML:s födelse</p>
+            <p>
+                I början av 1990-talet skapade Tim Berners-Lee World Wide Web (WWW).
+                Han arbetade på CERN och ville göra det lättare för forskare att dela information.
+                HTML var språket som användes för att strukturera innehållet på webbsidor.
+            </p>
+        </div>
+
+        <div class="element" id="www">
+            <p>World Wide Web</p>
+            <p>
+                World Wide Web är ett system av sammankopplade webbsidor som nås via internet.
+                Med hjälp av webbläsare kan användare navigera mellan sidor via länkar.
+                WWW är alltså inte samma sak som internet, utan en tjänst ovanpå internet.
+            </p>
+        </div>
+
+        <div class="element" id="w3c">
+            <p>W3C</p>
+            <p>
+                W3C (World Wide Web Consortium) är organisationen som ansvarar för webbstandarder.
+                De ser till att HTML, CSS och andra tekniker fungerar tillsammans oavsett webbläsare.
+                Detta gör webben mer stabil och tillgänglig för alla.
+            </p>
+        </div>
+
+        <div class="element" id="js">
+            <p>JavaScript & DOM</p>
+            <p>
+                JavaScript introducerades 1995 och gjorde webbsidor interaktiva.
+                Med DOM (Document Object Model) kan JavaScript ändra innehållet på sidan i realtid,
+                till exempel uppdatera text eller reagera på klick.
+            </p>
+        </div>
+
+        <div class="element" id="early">
+            <p>2000-talet</p>
+            <p>
+                Under början av 2000-talet utvecklades webben snabbt.
+                Webbplatser gick från enkla statiska sidor till mer dynamiska upplevelser.
+                Sociala medier och e-handel började bli allt vanligare.
+            </p>
+        </div>
+
+        <div class="element" id="html5">
+            <p>HTML5</p>
+            <p>
+                Webben har blivit mer avancerad och responsiv.
+                Ramverk som React, Angular och Vue används för att bygga komplexa applikationer.
+                Idag fungerar många webbplatser som appar direkt i webbläsaren.
+            </p>            </p>
+        </div>
+
+        <div class="element" id="modern">
+            <p>2010–2019</p>
+            <p>
+                Webben har blivit mer avancerad och responsiv.
+                Ramverk som React, Angular och Vue används för att bygga komplexa applikationer.
+                Idag fungerar många webbplatser som appar direkt i webbläsaren.
+            </p>
+        </div>
+
+    </section>
+
+</div>
+
+</div>
+</main>
+
+</body>
+</html>
